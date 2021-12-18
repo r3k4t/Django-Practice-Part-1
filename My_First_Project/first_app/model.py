@@ -17,7 +17,7 @@ class Album(models.Model):
     artist = models.ForeignKey(Musician,on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     release_date = models.DateField()
-    num_stars = models.IntegerField()
+    
     rating = (
     (1,"Worst"),
     (2,"Bad"),
